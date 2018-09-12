@@ -1,0 +1,64 @@
+PODS:
+  - ACEDrawingView (2.2.1)
+  - Kingfisher (4.8.0)
+  - Koloda (4.3.1):
+    - pop (~> 1.0)
+  - NCMB (2.4.3)
+  - NYXImagesKit (2.3)
+  - pop (1.0.10)
+  - Sketch (1.0.0)
+  - SVProgressHUD (2.2.5)
+  - SwiftDate (4.4.2)
+  - TTTAttributedLabel (2.0.0)
+  - "UITextView+Placeholder (1.2.1)"
+
+DEPENDENCIES:
+  - ACEDrawingView
+  - Kingfisher
+  - Koloda
+  - NCMB (from `https://github.com/NIFCloud-mbaas/ncmb_ios.git`)
+  - NYXImagesKit
+  - Sketch
+  - SVProgressHUD
+  - SwiftDate (~> 4.4.0)
+  - TTTAttributedLabel
+  - "UITextView+Placeholder"
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - ACEDrawingView
+    - Kingfisher
+    - Koloda
+    - NYXImagesKit
+    - pop
+    - Sketch
+    - SVProgressHUD
+    - SwiftDate
+    - TTTAttributedLabel
+    - "UITextView+Placeholder"
+
+EXTERNAL SOURCES:
+  NCMB:
+    :git: https://github.com/NIFCloud-mbaas/ncmb_ios.git
+
+CHECKOUT OPTIONS:
+  NCMB:
+    :commit: ff4c625eaa4d0789d03ad90ed572f7bfad8691e4
+    :git: https://github.com/NIFCloud-mbaas/ncmb_ios.git
+
+SPEC CHECKSUMS:
+  ACEDrawingView: fa6e8461682a54db3ac65151474fc77ef7e54fd2
+  Kingfisher: 976d828df2b24834c6a3f2fc4d82cdbd26552be1
+  Koloda: 0d39b2aa188ccd1fac48d752acaf9802e683c625
+  NCMB: 7b88a86be4a770bd260f42295c7649b00f57f178
+  NYXImagesKit: 8163e3335a40eaa173ca5bbbf81fafb57d3947eb
+  pop: 82ca6b068ce9278fd350fd9dd09482a0ce9492e6
+  Sketch: 05641e23f1615f0bdb33f1e89d694ee237e2d5b8
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  SwiftDate: 131cf2f09b390f0a07f0099e36005ffe2fbf4c7e
+  TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
+  "UITextView+Placeholder": 0c3efd97f37ea64bde7f34cc6e90fe02e87b3909
+
+PODFILE CHECKSUM: df8e7794b6994396843f0c8511935981571c4f09
+
+COCOAPODS: 1.5.3
