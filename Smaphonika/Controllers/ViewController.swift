@@ -13,6 +13,7 @@ import SVProgressHUD
 import SwiftDate
 import TTTAttributedLabel
 import Koloda
+import Spring
 
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, TimelineTableViewCellDelegate {

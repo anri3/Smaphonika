@@ -58,7 +58,7 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>9</integer>
+			<integer>10</integer>
 		</dict>
 		<key>Sketch.xcscheme</key>
 		<dict>
@@ -67,26 +67,33 @@
 			<key>orderHint</key>
 			<integer>8</integer>
 		</dict>
-		<key>SwiftDate.xcscheme</key>
+		<key>Spring.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>10</integer>
+			<integer>9</integer>
 		</dict>
-		<key>TTTAttributedLabel.xcscheme</key>
+		<key>SwiftDate.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
 			<integer>11</integer>
 		</dict>
-		<key>UITextView+Placeholder.xcscheme</key>
+		<key>TTTAttributedLabel.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
 			<integer>12</integer>
+		</dict>
+		<key>UITextView+Placeholder.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>13</integer>
 		</dict>
 		<key>pop.xcscheme</key>
 		<dict>

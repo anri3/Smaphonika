@@ -26,9 +26,13 @@
                 <rect key="frame" x="0.0" y="0.0" width="375" height="573.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="prof2.png" translatesAutoresizingMaskIntoConstraints="NO" id="lNB-cl-zFe">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="prof2.png" translatesAutoresizingMaskIntoConstraints="NO" id="lNB-cl-zFe" customClass="SpringImageView" customModule="Spring">
                         <rect key="frame" x="311" y="302" width="50" height="50"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                            <userDefinedRuntimeAttribute type="string" keyPath="animation" value="zoomIn"/>
+                        </userDefinedRuntimeAttributes>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="なまえ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tKh-gD-B6Y">
                         <rect key="frame" x="311" y="355" width="51" height="17"/>
@@ -76,12 +80,16 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sn3-Cb-Oub">
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sn3-Cb-Oub" customClass="SpringButton" customModule="Spring">
                         <rect key="frame" x="26" y="548" width="28" height="25"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <state key="normal" title="いいね" image="hanamaru.png">
                             <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                            <userDefinedRuntimeAttribute type="string" keyPath="animation" value="pop"/>
+                        </userDefinedRuntimeAttributes>
                         <connections>
                             <action selector="likeWithButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Xcs-hT-XjP"/>
                         </connections>
@@ -170,6 +178,10 @@
                         <state key="normal" title="コメントを表示">
                             <color key="titleColor" red="1" green="0.36753477066070672" blue="0.32829777797682191" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                            <userDefinedRuntimeAttribute type="string" keyPath="animation" value="flipY"/>
+                        </userDefinedRuntimeAttributes>
                         <connections>
                             <action selector="showCommentsWithButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="ML8-Ok-vq9"/>
                         </connections>
@@ -182,9 +194,13 @@
                         <fontDescription key="fontDescription" name="KAWAIITEGAKIMOJI" family="KAWAIITEGAKIMOJI" pointSize="20"/>
                         <textInputTraits key="textInputTraits"/>
                     </textField>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M0f-1h-TnB">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M0f-1h-TnB" customClass="SpringImageView" customModule="Spring">
                         <rect key="frame" x="14" y="4" width="291" height="291"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                            <userDefinedRuntimeAttribute type="string" keyPath="animation" value="zoomIn"/>
+                        </userDefinedRuntimeAttributes>
                     </imageView>
                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hwe-Zk-ZX4">
                         <rect key="frame" x="322" y="515" width="28" height="28"/>

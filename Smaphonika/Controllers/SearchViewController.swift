@@ -155,7 +155,7 @@ class SearchViewController: UIViewController, UISearchBarDelegate, UITableViewDa
     func loadUsers(searchText: String?) {
         let query = NCMBUser.query()
         // 自分を除外
-       query?.whereKey("objectId", notEqualTo: NCMBUser.current().objectId)
+      query?.whereKey("objectId", notEqualTo: NCMBUser.current().objectId)
         
         // 退会済みアカウントを除外
         query?.whereKey("active", notEqualTo: false)

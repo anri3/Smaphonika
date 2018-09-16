@@ -7,6 +7,7 @@ PODS:
   - NYXImagesKit (2.3)
   - pop (1.0.10)
   - Sketch (1.0.0)
+  - Spring (1.0.5)
   - SVProgressHUD (2.2.5)
   - SwiftDate (4.4.2)
   - TTTAttributedLabel (2.0.0)
@@ -19,6 +20,7 @@ DEPENDENCIES:
   - NCMB (from `https://github.com/NIFCloud-mbaas/ncmb_ios.git`)
   - NYXImagesKit
   - Sketch
+  - Spring
   - SVProgressHUD
   - SwiftDate (~> 4.4.0)
   - TTTAttributedLabel
@@ -32,6 +34,7 @@ SPEC REPOS:
     - NYXImagesKit
     - pop
     - Sketch
+    - Spring
     - SVProgressHUD
     - SwiftDate
     - TTTAttributedLabel
@@ -54,11 +57,12 @@ SPEC CHECKSUMS:
   NYXImagesKit: 8163e3335a40eaa173ca5bbbf81fafb57d3947eb
   pop: 82ca6b068ce9278fd350fd9dd09482a0ce9492e6
   Sketch: 05641e23f1615f0bdb33f1e89d694ee237e2d5b8
+  Spring: 17901566c8ecf3a1327902b940406c64512f9bb1
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   SwiftDate: 131cf2f09b390f0a07f0099e36005ffe2fbf4c7e
   TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
   "UITextView+Placeholder": 0c3efd97f37ea64bde7f34cc6e90fe02e87b3909
 
-PODFILE CHECKSUM: df8e7794b6994396843f0c8511935981571c4f09
+PODFILE CHECKSUM: 4a3c89c2ed563ba00bca8e670cc2cccd3741b5ba
 
 COCOAPODS: 1.5.3

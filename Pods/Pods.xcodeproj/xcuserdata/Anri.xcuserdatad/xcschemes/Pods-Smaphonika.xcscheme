@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0940"
+   LastUpgradeVersion = "0930"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "47DED3EEA93DAB62DAF404EA028F97FF"
+               BlueprintIdentifier = "6F4144F3C96567320ADB0F06DD966AE6"
                BuildableName = "Pods_Smaphonika.framework"
                BlueprintName = "Pods-Smaphonika"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "47DED3EEA93DAB62DAF404EA028F97FF"
+            BlueprintIdentifier = "6F4144F3C96567320ADB0F06DD966AE6"
             BuildableName = "Pods_Smaphonika.framework"
             BlueprintName = "Pods-Smaphonika"
             ReferencedContainer = "container:Pods.xcodeproj">

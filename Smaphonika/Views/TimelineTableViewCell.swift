@@ -8,6 +8,7 @@
 
 import UIKit
 import TTTAttributedLabel
+import Spring
 
 protocol TimelineTableViewCellDelegate {
     func didTapLikeButton(tableViewCell: UITableViewCell, button: UIButton)
@@ -52,6 +53,7 @@ class TimelineTableViewCell: UITableViewCell {
         userImageView.layer.cornerRadius = userImageView.bounds.width / 2.0
         userImageView.clipsToBounds = true
         
+        //ユーザーネームを画面サイズに合わせて表示
         userNameLabel.adjustsFontSizeToFitWidth = true
         
        
@@ -61,6 +63,14 @@ class TimelineTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         
+    }
+    
+    func textViewDidChange(textView: UITextView) {
+        let maxHeight = 229.0  // 入力フィールドの最大サイズ
+        if(textView.frame.size.height.native < maxHeight) {
+            let size:CGSize = userCommentTextView.sizeThatFits(userCommentTextView.frame.size)
+            userCommentTextView.frame.size.height = size.height
+        }
     }
     
     @IBAction func like(button: UIButton) {
