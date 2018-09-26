@@ -279,7 +279,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                     self.followings.append(following.object(forKey: "following") as! NCMBUser)
                 }
                 
-             self.followings.append(NCMBUser.current())
+             
+                self.followings.append(NCMBUser.current())
                 
                 self.loadTimeline()
             }

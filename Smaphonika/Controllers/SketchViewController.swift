@@ -177,26 +177,21 @@ class SketchViewController: UIViewController {
         }
         alertController.addAction(action2)
         
-        let action3 = UIAlertAction(title: "スタンプ", style: .default){ (action: UIAlertAction) in
-            self.sketchView.drawTool = SketchToolType.stamp
+        let action3 = UIAlertAction(title: "四角", style: .default){ (action: UIAlertAction) in
+            self.sketchView.drawTool = SketchToolType.rectangleFill
         }
         alertController.addAction(action3)
         
-        let action4 = UIAlertAction(title: "矢印", style: .default){ (action: UIAlertAction) in
-            self.sketchView.drawTool = SketchToolType.arrow
+        let action4 = UIAlertAction(title: "丸", style: .default){ (action: UIAlertAction) in
+            self.sketchView.drawTool = SketchToolType.ellipseFill
         }
         alertController.addAction(action4)
         
-        let action5 = UIAlertAction(title: "四角", style: .default){ (action: UIAlertAction) in
-            self.sketchView.drawTool = SketchToolType.rectangleStroke
+        let action5 = UIAlertAction(title: "矢印", style: .default){ (action: UIAlertAction) in
+            self.sketchView.drawTool = SketchToolType.arrow
         }
         alertController.addAction(action5)
-        
-        let action6 = UIAlertAction(title: "丸", style: .default){ (action: UIAlertAction) in
-            self.sketchView.drawTool = SketchToolType.ellipseStroke
-        }
-        alertController.addAction(action6)
-        
+
         let cancelAction = UIAlertAction(title: "キャンセル", style: .cancel, handler: nil)
         alertController.addAction(cancelAction)
         UIApplication.shared.keyWindow?.rootViewController?.present(alertController,animated: true,completion: nil)

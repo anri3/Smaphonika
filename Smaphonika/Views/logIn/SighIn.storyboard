@@ -26,16 +26,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ユーザーID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CKr-nW-mSo">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ユーザーID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CKr-nW-mSo">
                                 <rect key="frame" x="76" y="116" width="223" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="g_pencilkaisho_free" family="g_pencilkaisho_free" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="パスワード" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q9T-rN-P3e">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="パスワード" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q9T-rN-P3e">
                                 <rect key="frame" x="76" y="175" width="223" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="g_pencilkaisho_free" family="g_pencilkaisho_free" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
@@ -84,6 +82,14 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.98186029070000003" green="1" blue="0.79154557260000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="1Ru-zl-y8t" firstAttribute="trailing" secondItem="q9T-rN-P3e" secondAttribute="trailing" constant="76" id="1Xg-Mw-gHC"/>
+                            <constraint firstItem="1Ru-zl-y8t" firstAttribute="trailing" secondItem="CKr-nW-mSo" secondAttribute="trailing" constant="76" id="1vu-2a-3et"/>
+                            <constraint firstItem="CKr-nW-mSo" firstAttribute="top" secondItem="1Ru-zl-y8t" secondAttribute="top" constant="52" id="DMG-xw-mJY"/>
+                            <constraint firstItem="q9T-rN-P3e" firstAttribute="leading" secondItem="1Ru-zl-y8t" secondAttribute="leading" constant="76" id="K3K-cO-PBl"/>
+                            <constraint firstItem="CKr-nW-mSo" firstAttribute="leading" secondItem="1Ru-zl-y8t" secondAttribute="leading" constant="76" id="gdK-D9-1TN"/>
+                            <constraint firstItem="q9T-rN-P3e" firstAttribute="top" secondItem="CKr-nW-mSo" secondAttribute="bottom" constant="29" id="rFr-3Q-VDD"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="1Ru-zl-y8t"/>
                     </view>
                     <navigationItem key="navigationItem" title="ログイン" id="axd-2Y-RLH"/>
@@ -137,26 +143,15 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.39560848980000002" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="KAWAIITEGAKIMOJI" family="KAWAIITEGAKIMOJI" pointSize="25"/>
-                                <state key="normal" title="新規登録">
+                                <state key="normal" title="同意して新規登録">
                                     <color key="titleColor" red="0.042613390110000003" green="0.47450980390000003" blue="0.082618137990000007" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="sighUp" destination="Ihv-5S-sbw" eventType="touchUpInside" id="QWE-g7-f6l"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TNb-cq-l43">
-                                <rect key="frame" x="20" y="341" width="68" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="g_pencilkaisho_free" family="g_pencilkaisho_free" pointSize="17"/>
-                                <state key="normal" title="利用規約">
-                                    <color key="titleColor" red="0.042613390110000003" green="0.47450980390000003" blue="0.082618137990000007" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="8C9-xd-zdd" kind="presentation" id="ArQ-fC-pN4"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oIw-tm-Lcy">
-                                <rect key="frame" x="103" y="341" width="170" height="29"/>
+                                <rect key="frame" x="129" y="340" width="170" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="g_pencilkaisho_free" family="g_pencilkaisho_free" pointSize="17"/>
                                 <state key="normal" title="プライバシーポリシー">
@@ -167,19 +162,30 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="と" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3fi-08-iqq">
-                                <rect key="frame" x="89" y="347" width="17" height="17"/>
+                                <rect key="frame" x="111" y="347" width="17" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="g_pencilkaisho_free" family="g_pencilkaisho_free" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="に同意して" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aLm-9O-yUI">
-                                <rect key="frame" x="271" y="347" width="85" height="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="に" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aLm-9O-yUI">
+                                <rect key="frame" x="305" y="347" width="17" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="g_pencilkaisho_free" family="g_pencilkaisho_free" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TNb-cq-l43">
+                                <rect key="frame" x="43" y="340" width="68" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="g_pencilkaisho_free" family="g_pencilkaisho_free" pointSize="17"/>
+                                <state key="normal" title="利用規約">
+                                    <color key="titleColor" red="0.042613390110000003" green="0.47450980390000003" blue="0.082618137990000007" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="8C9-xd-zdd" kind="presentation" id="ArQ-fC-pN4"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.98186029070000003" green="1" blue="0.79154557260000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="JTI-YP-QgU"/>
@@ -205,7 +211,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="TUj-IK-w2t">
-                                <rect key="frame" x="16" y="74" width="343" height="519"/>
+                                <rect key="frame" x="16" y="74" width="343" height="573"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.98186029070000003" green="1" blue="0.79154557260000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <string key="text">サンプル株式会社（以下，「当社」といいます。）は，本ウェブサイト上で提供するサービス（以下,「本サービス」といいます。）におけるプライバシー情報の取扱いについて，以下のとおりプライバシーポリシー（以下，「本ポリシー」といいます。）を定めます。
@@ -268,15 +274,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jf3-A6-4OJ">
-                                <rect key="frame" x="16" y="602" width="343" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.68102273030000005" green="1" blue="0.67857835919999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="g_pencilkaisho_free" family="g_pencilkaisho_free" pointSize="39"/>
-                                <state key="normal" title="同意する">
-                                    <color key="titleColor" red="0.042613390110000003" green="0.47450980390000003" blue="0.082618137990000007" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.98186029070000003" green="1" blue="0.79154557260000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="Vfy-4a-tyn"/>
@@ -303,7 +300,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Qtd-pm-Vyc">
-                                <rect key="frame" x="16" y="74" width="343" height="519"/>
+                                <rect key="frame" x="16" y="74" width="343" height="573"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.98186029070000003" green="1" blue="0.79154557260000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <string key="text">サンプル株式会社（以下，「当社」といいます。）は，本ウェブサイト上で提供するサービス（以下,「本サービス」といいます。）におけるプライバシー情報の取扱いについて，以下のとおりプライバシーポリシー（以下，「本ポリシー」といいます。）を定めます。
@@ -366,15 +363,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KIJ-NJ-R3W">
-                                <rect key="frame" x="16" y="602" width="343" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.68102273030000005" green="1" blue="0.67857835919999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="g_pencilkaisho_free" family="g_pencilkaisho_free" pointSize="39"/>
-                                <state key="normal" title="同意する">
-                                    <color key="titleColor" red="0.042613390110000003" green="0.47450980390000003" blue="0.082618137990000007" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.98186029070000003" green="1" blue="0.79154557260000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="gHL-cF-vZZ"/>

@@ -114,7 +114,7 @@ class SearchViewController: UIViewController, UISearchBarDelegate, UITableViewDa
     
     func didTapFollowButton(tableViewCell: UITableViewCell, button: UIButton) {
         let displayName = users[tableViewCell.tag].object(forKey: "displayName") as? String
-        let message = displayName! + "をフォローしますか？"
+        let message = displayName != nil ? displayName! + "をフォローしますか？" : "名無しをフォローしますか？"
         let alert = UIAlertController(title: "フォロー", message: message, preferredStyle: .alert)
         let okAction = UIAlertAction(title: "OK", style: .default) { (action) in
             self.follow(selectedUser: self.users[tableViewCell.tag])
@@ -155,14 +155,16 @@ class SearchViewController: UIViewController, UISearchBarDelegate, UITableViewDa
     func loadUsers(searchText: String?) {
         let query = NCMBUser.query()
         // 自分を除外
-      query?.whereKey("objectId", notEqualTo: NCMBUser.current().objectId)
+       query?.whereKey("objectId", notEqualTo: NCMBUser.current().objectId)
+        
+      
         
         // 退会済みアカウントを除外
         query?.whereKey("active", notEqualTo: false)
         
         // 検索ワードがある場合
         if let text = searchText {
-            query?.whereKey("userName", equalTo: text)
+            query?.whereKey("displayName", equalTo: ["$regex": "(?i)\(text)"])
         }
         
         // 新着ユーザー50人だけ拾う

@@ -56,6 +56,11 @@ class SighUpViewController: UIViewController, UITextFieldDelegate {
             print("パスワードの不一致")
         }
         
+        let acl = NCMBACL()
+        acl.setPublicReadAccess(true)
+        acl.setPublicWriteAccess(true)
+        user.acl = acl
+        
         user.signUpInBackground { (error) in
             if error != nil {
                 //エラーがあった場合
