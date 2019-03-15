@@ -19,8 +19,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-        let applicationKey = "6a2b4305d4a53fe37b3ecb585ca8923fa7daa5f786c6ae9cc460ad92b1b522b8"
-        let clientKey = "9e5f677d80f241a6ec4c9ba701b3fae1356688abbb47752f698c125e9563a59f"
+        //NCMB key
+        let applicationKey = "***"
+        let clientKey = "***"
         
         NCMB.setApplicationKey(applicationKey, clientKey: clientKey)
         
